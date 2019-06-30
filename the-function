@@ -1,0 +1,9 @@
+function y_var = BasicTIV(~, y, beta1,delta_I1,pV1,delta_V1)
+
+    y_var = zeros(3,1);
+    y_var(1) = - beta1 * y(1) * y(3);
+    y_var(2) = beta1 * y(1) * y(3) - delta_I1 * y(2);
+    y_var(3) = pV1 * y(2) - delta_V1 * y(3);
+    
+    
+end 
